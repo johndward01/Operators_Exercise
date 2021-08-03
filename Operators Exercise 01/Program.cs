@@ -6,7 +6,7 @@ namespace Operators_Exercise_01
     {
         static void Main(string[] args)
         {
-            /*===================================================   Mathematical Operators   ======================================================*/
+            #region/*===================================================   Mathematical Operators   ======================================================*/
 
             int x = 10;
             int y = 20;
@@ -82,9 +82,10 @@ namespace Operators_Exercise_01
             // TODO: z = ?
 
             AddSpace();
-            
 
-            /*===================================================   Relational Operators   ======================================================*/
+            #endregion
+
+            #region/*===================================================   Relational Operators   ======================================================*/
 
             bool conditionalValue = false;
             int a = 10;
@@ -129,8 +130,9 @@ namespace Operators_Exercise_01
 
             AddSpace();
 
+            #endregion
 
-            /*===================================================   Logical Operators   ======================================================*/
+            #region/*===================================================   Logical Operators   ======================================================*/
 
             // What is the value of the variable conditionalValue with the logical operator
             conditionalValue = a < b && ++a == b;
@@ -152,9 +154,9 @@ namespace Operators_Exercise_01
 
             AddSpace();
 
-            
+            #endregion
 
-            /*===================================================   Assignment Operators   ======================================================*/
+            #region/*===================================================   Assignment Operators   ======================================================*/
 
             double total = 0; // Simple assignment operator =
             double var1 = 10.50; // Simple assignment operator =
@@ -195,9 +197,10 @@ namespace Operators_Exercise_01
             // TODO: total = ?
 
             AddSpace();
-            
 
-            /*===================================================   Ternary Operators   ======================================================*/
+            #endregion
+
+            #region/*===================================================   Ternary Operators   ======================================================*/
             string finalString = "";
             string str1 = $"String 1";
             string str2 = $"String 2";
@@ -245,6 +248,8 @@ namespace Operators_Exercise_01
             // Thought Experiment: What will be the value of finalString after the Ternary operation?
             intTotal = !string.IsNullOrEmpty(finalString) ? int.Parse(str1[7].ToString()) : int.Parse(str2[7].ToString());
             // TODO: intTotal = ?
+
+            #endregion
         }
 
         public static void AddSpace()
