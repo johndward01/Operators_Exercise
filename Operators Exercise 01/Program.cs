@@ -281,6 +281,14 @@ namespace Operators_Exercise_01
             Console.WriteLine(finalString);
             // TODO: finalString = 1
 
+            AddSpace();
+
+            // BONUS
+            // Thought Experiment: What will be the value of finalString after the Ternary operation?
+            intTotal = !string.IsNullOrEmpty(finalString) ? int.Parse(str1[7].ToString()) : int.Parse(str2[7].ToString());
+            Console.WriteLine(intTotal);
+            // TODO: intTotal = 1
+
             #endregion
         }
 
