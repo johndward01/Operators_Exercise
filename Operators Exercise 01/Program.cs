@@ -6,7 +6,7 @@ namespace Operators_Exercise_01
     {
         static void Main(string[] args)
         {
-            /*===================================================   Mathematical Operators   ======================================================*/
+            #region/*===================================================   Mathematical Operators   ======================================================*/
 
             int x = 10;
             int y = 20;
@@ -104,7 +104,7 @@ namespace Operators_Exercise_01
 
             #endregion
 
-            /*===================================================   Relational Operators   ======================================================*/
+            #region/*===================================================   Relational Operators   ======================================================*/
 
             bool conditionalValue = false;
             int a = 10;
@@ -115,51 +115,61 @@ namespace Operators_Exercise_01
 
             // Thought Experiment: What is the value of the variable conditionalValue after the == operator?
             conditionalValue = first == second;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = true
 
             AddSpace();
 
             // Thought Experiment: What is the value of the variable conditionalValue after the != operator?
             conditionalValue = first != second;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = false
 
             AddSpace();
 
             // Thought Experiment: What is the value of the variable conditionalValue after the > operator?
             conditionalValue = a > b;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = false
 
             AddSpace();
 
             // Thought Experiment: What is the value of the variable conditionalValue after the < operator?
             conditionalValue = a < b;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = true
 
             AddSpace();
 
             // Thought Experiment: What is the value of the variable conditionalValue after the >= operator?
             conditionalValue = a >= b;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = false
 
             AddSpace();
 
             // Thought Experiment: What is the value of the variable conditionalValue after the <= operator?
             conditionalValue = a <= b;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = true
 
             AddSpace();
 
-            /*===================================================   Logical Operators   ======================================================*/
+            #endregion
+
+            #region/*===================================================   Logical Operators   ======================================================*/
 
             // Thought Experiement: What is the value of the variable conditionalValue with the logical operator
             conditionalValue = a < b && ++a == b;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = true
 
             AddSpace();
 
             // Thought Experiement: What is the value of the variable conditionalValue with the logical operator
             conditionalValue = a++ == b || first == second;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = true
 
             AddSpace();
 
@@ -167,13 +177,14 @@ namespace Operators_Exercise_01
             second = true;
             // Thought Experiement: What is the value of the variable conditionalValue with the logical operator
             conditionalValue = !second == first && a >= --b;
-            // TODO: conditionalValue = ?
+            Console.WriteLine(conditionalValue);
+            // TODO: conditionalValue = true
 
             AddSpace();
 
-            
+            #endregion
 
-            /*===================================================   Assignment Operators   ======================================================*/
+            #region/*===================================================   Assignment Operators   ======================================================*/
 
             double total = 0; // Simple assignment operator =
             double var1 = 10.50; // Simple assignment operator =
@@ -181,43 +192,49 @@ namespace Operators_Exercise_01
 
             // TODO: use the Simple Assignment operator to add var1 and var2 and then assign the sum to the total variable
             total = var1 + var2;
-            // TODO: total = ?
+            Console.WriteLine(total);
+            // TODO: total = 13.75
 
             AddSpace();
 
             // Thought Experiment: What's the result doing the same operation, but replacing the Simple Assignment operator with the Add Assignment operator?
             total += var1 + var2;
-            // TODO: total = ?
+            Console.WriteLine(total);
+            // TODO: total = 27.5
 
             AddSpace();
 
             // TODO: use the Subtract Assignment operator to subtract total from var1 
             total -= var1;
-            // TODO: total = ?
+            Console.WriteLine(total);
+            // TODO: total = 17
 
             AddSpace();
 
             // TODO: use the Multiply Assignment operator to multiply total by var2
             total *= var2;
-            // TODO: total = ?
+            Console.WriteLine(total);
+            // TODO: total = 55.25
 
             AddSpace();
 
             // TODO: use the Division Assignment operator to divide total by 5
             total /= 5;
-            // TODO: total = ?
+            Console.WriteLine(total);
+            // TODO: total = 11.05
 
             AddSpace();
 
             // TODO: use the Modulus Assignment operator to modulo the total by 11.05
             total %= 11.05;
-            // TODO: total = ?
+            Console.WriteLine(total);
+            // TODO: total = 0
 
             AddSpace();
 
-            
+            #endregion
 
-            /*===================================================   Ternary Operators   ======================================================*/
+            #region/*===================================================   Ternary Operators   ======================================================*/
             string finalString = "";
             string str1 = $"String 1";
             string str2 = $"String 2";
@@ -237,7 +254,8 @@ namespace Operators_Exercise_01
             }
             */
             finalString = finalString.Length == 0 ? str1 : str2;
-            // TODO: finalString = ?
+            Console.WriteLine(finalString);
+            // TODO: finalString = String 1
 
             AddSpace();
 
@@ -253,15 +271,17 @@ namespace Operators_Exercise_01
             }
             */
             intTotal = int1 + int2 > intTotal ? int1 + int2 : int1 - int2;
-            // TODO: intTotal = ?
+            Console.WriteLine(intTotal);
+            // TODO: intTotal = 3
 
             AddSpace();
 
             // Thought Experiment: What will be the value of finalString after the Ternary operation?
             finalString = finalString != null && finalString.Length != 0 ? str1[7].ToString() : str2[7].ToString();
-            // TODO: finalString = ?
+            Console.WriteLine(finalString);
+            // TODO: finalString = 1
 
-            
+            #endregion
         }
 
         public static void AddSpace()
